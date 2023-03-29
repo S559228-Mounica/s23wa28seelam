@@ -13,7 +13,7 @@ router.get('/', function (req, res, next) {
         }     
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('Math.log2() applied to ' + value + ' is ' + Math.log2(value));
-        res.write('<br>Math.cosh() applied to ' + value + ' is ' + Math.cosh(2,value))
+        res.write('<br>Math.cosh() applied to ' + value + ' is ' + Math.cosh(value))
         res.write('<br>Math.floor() applied to ' + value + ' is ' + Math.floor(value))
         res.end()
     }
